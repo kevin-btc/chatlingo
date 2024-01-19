@@ -18,29 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyA6ynlJODZKAQESjmCnP7H_ZNwB7FOtZYs",
-    authDomain: "chatlingo-35af9.firebaseapp.com",
-    projectId: "chatlingo-35af9",
-    storageBucket: "chatlingo-35af9.appspot.com",
-    messagingSenderId: "1080895166811",
-    appId: "1:1080895166811:web:4a6485a29e5aaa63b0227e",
-    measurementId: "G-FKECWJR5ST"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
       <body className={inter.className}>
         <PolyfireProvider project={"test_50"}>
           <SpeechProvider>{children}</SpeechProvider>
